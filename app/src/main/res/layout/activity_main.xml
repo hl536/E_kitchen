@@ -1,127 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:orientation="vertical">
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0px"
-        android:orientation="vertical"
-        android:layout_weight="1"></LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/lable"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:orientation="horizontal">
-        <LinearLayout
-            android:layout_width="0px"
-            android:layout_height="match_parent"
-            android:layout_weight="1"></LinearLayout>
+        android:layout_gravity=""
+        android:text="E-kitchen"
+        android:layout_marginTop="200px"
+        android:layout_marginLeft="20dp"
+        android:textSize="40sp"
+        android:textColor="#5767de"
+        ></TextView>
 
-        <LinearLayout
-            android:layout_width="0px"
-            android:layout_height="match_parent"
-            android:layout_weight="8"
-            android:orientation="vertical">
 
-            <EditText
-                android:id="@+id/username"
-                android:layout_width="match_parent"
-                android:layout_height="35dp"
-                android:background="@drawable/edit_background"
-                android:gravity="center"
-                android:hint="用户名"
-                />
 
-            <EditText
-                android:id="@+id/password"
-                android:layout_width="match_parent"
-                android:layout_height="35dp"
-                android:layout_marginTop="20dp"
-                android:background="@drawable/edit_background"
-                android:gravity="center"
-                android:inputType="textPassword"
-                android:hint="密码" />
+    <EditText
+        android:id="@+id/userName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:hint="Enter your username"/>
 
-            <Button
-                android:id="@+id/login"
-                android:layout_width="match_parent"
-                android:layout_height="35dp"
-                android:layout_gravity="center"
-                android:layout_marginTop="50px"
-                android:background="@drawable/login_background"
-                android:text="登录" />
+    <EditText
 
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="20px">
+        android:id="@+id/passwd"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:layout_marginLeft="20dp"
+        android:hint="Enter your password"/>
 
-                <CheckBox
-                    android:id="@+id/checkbox"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="APP使用协议"
-                    />
 
-                <TextView
-                    android:id="@+id/forgetPassword"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentRight="true"
-                    android:layout_centerVertical="true"
-                    android:text="忘记密码" />
-            </RelativeLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="50dp">
-                <LinearLayout
-                    android:layout_width="0px"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"></LinearLayout>
-                <LinearLayout
-                    android:layout_width="0px"
-                    android:layout_height="match_parent"
-                    android:layout_weight="3"
-                    android:gravity="center">
-                    <RelativeLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        >
-                        <ImageView
-                            android:id="@+id/wechat"
-                            android:layout_width="48dp"
-                            android:layout_height="48dp"
-                            android:src="@drawable/wechat" />
-                        <ImageView
-                            android:id="@+id/qq"
-                            android:layout_width="48dp"
-                            android:layout_height="48dp"
-                            android:src="@drawable/qq"
-                            android:layout_alignParentRight="true"/>
-                    </RelativeLayout>
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="0px"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"></LinearLayout>
-            </LinearLayout>
-            <TextView
-                android:id="@+id/register"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="center|bottom"
-                android:text="免费注册" />
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="0px"
-            android:layout_height="match_parent"
-            android:layout_weight="1"></LinearLayout>
-    </LinearLayout>
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="15dp"
+        android:text="Log In"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="18sp"/>
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="15dp"
+        android:text="Register"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="18sp"/>
+
 </LinearLayout>
